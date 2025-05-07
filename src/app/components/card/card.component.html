@@ -1,1 +1,12 @@
-<p>card works!</p>
+<div class="card">
+    <div class="icon">
+        <h1><ng-content select="[icon]"></ng-content></h1>
+    </div>
+
+    <div class="content">
+        <h3>{{ cardTitle }}</h3>
+        <ul>
+            <li *ngFor="let item of listItems">{{ item }}</li>
+        </ul>
+    </div>
+</div>

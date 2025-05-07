@@ -1,0 +1,12 @@
+footer{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 0 32rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 3rem;
+}
+
+a i:hover{
+    color: #759bcc;
+}

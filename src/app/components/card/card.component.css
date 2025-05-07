@@ -1,0 +1,33 @@
+.card {
+    min-width: 25rem;
+    border-radius: 10px;
+    font-size: 15px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;   
+    gap: 0.5rem;
+    justify-items: center;
+    background-color: rgba(0, 0, 0, 0.521);
+    color: #caf0ff;
+}
+
+div.card{
+    display: flex;
+}
+
+.card .icon{
+    min-width: 6rem;
+    justify-items: center;
+
+}
+.card .content{
+    min-width: 20rem;
+    text-align: left;
+    margin: 1rem 0;
+}
+
+ul, li{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: left;
+}

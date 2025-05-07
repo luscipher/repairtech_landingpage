@@ -1,1 +1,76 @@
-<p>main works!</p>
+<app-header></app-header>
+<main>
+    <section class="main-section" >
+        <div>
+            <h1>REPAIRTECH</h1>
+            <p>Manutenção de Computadores</p>
+            <a href="https://wa.me/5543999999999" target="_blank">
+                <button>
+                  <i class="fab fa-whatsapp"></i> WhatsApp
+                </button>
+              </a>
+        </div>
+        <img id="logo" src="assets/logo.png" style="width: 40%;">
+    </section>
+
+    <section id="servicos">
+        <div class="grid">
+            <app-card
+                cardTitle="Manutenção e Suporte"
+                [listItems]="[
+                'Formatação de computadores',
+                'Remoção de vírus',
+                'Limpeza física',
+                'Diagnóstico de problemas'
+                ]"> <i icon class="fa-solid fa-screwdriver-wrench"></i></app-card>
+
+            <app-card
+                cardTitle="Instalações e Configurações"
+                [listItems]="[
+                'Instalação de software',
+                'Configuração de impressoras',
+                'Configuração de rede',
+                'Montagem e upgrade de computadores'
+                ]"><i icon class="fa-solid fa-gears"></i></app-card>
+
+            <app-card
+                cardTitle="Internet e Rede"
+                [listItems]="[
+                'Configuração de roteadores',
+                'Configuração de repetidores Wi-Fi',
+                'Ampliação de sinal Wi-Fi'
+                ]"><i icon class="fa-solid fa-wifi"></i></app-card>
+
+            <app-card
+                cardTitle="Segurança e Backup"
+                [listItems]="[
+                'Criação de rotinas de backup',
+                'Instalação de antivírus e firewall',
+                'Criação e gerenciamento de contas'
+                ]"><i icon class="fa-solid fa-shield-halved"></i></app-card>
+
+        </div>
+        
+    </section>
+
+    <section id="contatos">
+        <div>
+            <p><i class="fas fa-phone-alt"></i> (43) 99999-9999</p>
+            <p><i class="fas fa-envelope"></i> contato.mail.com</p>
+            <p><i class="fas fa-map-marker-alt"></i> Rua Exemplo, 123 - Cidade/PR</p>
+        </div>
+       
+        <div class="social-icons">
+              <a href="https://wa.me/5543999999999" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+              <a href="https://instagram.com/usuario" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://linkedin.com/usuario" target="_blank">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+        </div>
+    </section>
+</main>
+<app-footer></app-footer>
